@@ -43,7 +43,12 @@ class MainActivity : AppCompatActivity() {
 //        navView.setupWithNavController(navController)
         setContentView(R.layout.another_main_activity)
 
+        val button: Button = findViewById(R.id.main_button)
+        button.text = "Created"
 
+        button.setOnClickListener {
+            Log.d("sample","clicking this damn button")
+        }
 
     }
 
@@ -63,6 +68,8 @@ class MainActivity : AppCompatActivity() {
         Log.d("myTag", "onResume called")
 
         super.onResume()
+        val button: Button = findViewById(R.id.main_button)
+        button.text = "Resume"
     }
 
     override fun onPause() {
