@@ -14,7 +14,19 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.ismayil.myfancy.databinding.ActivityMainBinding
+import android.graphics.Bitmap
 
+import android.graphics.BitmapFactory
+
+import android.os.AsyncTask
+import java.lang.Exception
+import java.net.URL
+
+
+import android.content.Intent
+
+import android.view.View
+import android.widget.EditText
 class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
@@ -47,7 +59,12 @@ class MainActivity : AppCompatActivity() {
         button.text = "Created"
 
         button.setOnClickListener {
-            Log.d("sample","clicking this damn button")
+            Log.d("sample","clicking this damn button again")
+
+            val intent = Intent(this, DisplayMessageActivity::class.java).apply {
+                putExtra("EXTRA_MESSAGE", "hi there")
+            }
+            startActivity(intent)
         }
 
     }
@@ -94,5 +111,6 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
-}
 
+
+}
