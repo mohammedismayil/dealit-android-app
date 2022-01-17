@@ -1,26 +1,50 @@
 package com.ismayil.myfancy
 
+import android.R.attr
+import android.R.attr.*
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.EditText
 import com.squareup.picasso.Picasso;
 //import android.R
 import android.widget.ImageView
+import android.widget.TextView
+import android.content.Intent
+
+
+
 
 
 class DisplayMessageActivity : AppCompatActivity() {
+    lateinit var emailTV: EditText
+    lateinit var passwordTV: EditText
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_display_message)
+        setContentView(R.layout.activity_display_message);
 
-        val imageView: ImageView = findViewById(R.id.imageView3)
+initViews()
+    }
 
-//        Picasso.get().load("https://media.geeksforgeeks.org/wp-content/cdn-uploads/logo-new-2.svg").into(imageView)
 
-        Picasso.get().load("http://i.imgur.com/DvpvklR.png").into(imageView);
 
+
+
+
+
+    fun initViews(){
+        val btn_click_me = findViewById(R.id.submitButton) as Button
+        emailTV = findViewById(R.id.emailTV)
+        passwordTV = findViewById(R.id.passwordTV)
+        btn_click_me.setOnClickListener {
+            Log.d("DisplayMessageActivity", "next button tapped")
+            Log.d("DisplayMessageActivity", emailTV.text.toString())
+            val intent = Intent(applicationContext, EmailVerifyActivity::class.java)
+            intent.putExtra("email",emailTV.text.toString())
+            startActivity(intent);
+        }
     }
 
     override fun onStart() {

@@ -7,43 +7,45 @@
     android:background="#ffffff"
     tools:context=".DisplayMessageActivity">
 
-    <TextView
-        android:id="@+id/textView3"
+    <EditText
+        android:id="@+id/emailTV"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginStart="177dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="176dp"
-        android:text="TextView"
-        android:textColor="@android:color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginStart="177dp"
-        android:layout_marginTop="244dp"
-        android:layout_marginEnd="176dp"
-        android:text="TextView"
-        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="163dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="53dp"
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/passwordTV"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="141dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="142dp"
-
+    <EditText
+        android:id="@+id/passwordTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="101dp"
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/submitButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/emailTV" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Button"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTV"
+        tools:layout_editor_absoluteX="158dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
