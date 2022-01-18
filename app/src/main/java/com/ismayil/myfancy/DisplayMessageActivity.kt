@@ -35,7 +35,7 @@ initViews()
 
 
     fun initViews(){
-        val btn_click_me = findViewById(R.id.submitButton) as Button
+        val btn_click_me = findViewById<Button>(R.id.submitButton)
         emailTV = findViewById(R.id.emailTV)
         passwordTV = findViewById(R.id.passwordTV)
         btn_click_me.setOnClickListener {
