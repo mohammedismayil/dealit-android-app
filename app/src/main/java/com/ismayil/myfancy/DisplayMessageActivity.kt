@@ -41,8 +41,8 @@ initViews()
         btn_click_me.setOnClickListener {
             Log.d("DisplayMessageActivity", "next button tapped")
             Log.d("DisplayMessageActivity", emailTV.text.toString())
-            val intent = Intent(applicationContext, EmailVerifyActivity::class.java)
-            intent.putExtra("email",emailTV.text.toString())
+            val intent = Intent(this, EmailVerifyActivity::class.java)
+            intent.putExtra("email", emailTV.text.toString())
             startActivity(intent);
         }
     }

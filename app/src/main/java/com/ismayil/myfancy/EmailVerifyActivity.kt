@@ -20,13 +20,13 @@ class EmailVerifyActivity : AppCompatActivity() {
          emailTV = findViewById(R.id.passedEmailTV)
 
 
-        val intent = Intent(applicationContext, EmailVerifyActivity::class.java)
-        val bundle: Bundle? = intent.extras
-        var string: String? = bundle?.getString("email")
-        string = "oiii"
 
-        Log.d("DisplayMessageActivity", "Got email from first activity$string")
+
+//        val intent = Intent(this, DisplayMessageActivity::class.java)
+        val bundle: Bundle? = intent.extras
+        val name: String? = bundle?.getString("email")
+        Log.d("DisplayMessageActivity", "Got email from first activity$name")
         emailTV.setText("passedEmail");
-        emailTV.setText(string);
+        emailTV.setText(name);
     }
 }
