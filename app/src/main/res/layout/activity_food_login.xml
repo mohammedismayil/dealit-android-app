@@ -55,7 +55,7 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="password"
             android:textColor="@android:color/black" />
 
         <EditText
@@ -64,6 +64,12 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
