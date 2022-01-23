@@ -8,26 +8,26 @@
     android:orientation="vertical"
     tools:context=".FoodLoginActivity">
 
-    <ImageView
-        android:id="@+id/imageView3"
 
-        android:layout_width="400dp"
-        android:layout_height="250dp"
-        android:src="@drawable/topheader"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="408dp"
-        android:layout_height="491dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:background="@android:color/white"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3">
 
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        >
+        <ImageView
+            android:id="@+id/imageView3"
+
+            android:layout_width="400dp"
+            android:layout_height="250dp"
+            android:src="@drawable/topheader"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
         <TextView
             android:id="@+id/textView4"
             android:layout_width="200sp"
@@ -49,7 +49,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:text="your e-mail id" />
 
         <TextView
             android:id="@+id/textView6"
@@ -63,13 +65,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/black"
+            app:passwordToggleDrawable="@drawable/show_password_selector"
+
+
+            android:text="password" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account ? Signup" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

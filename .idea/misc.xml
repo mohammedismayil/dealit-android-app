@@ -10,6 +10,9 @@
         <entry key="app/src/main/res/drawable/ic_menu_camera.xml" value="0.34791666666666665" />
         <entry key="app/src/main/res/drawable/ic_menu_gallery.xml" value="0.34791666666666665" />
         <entry key="app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.34791666666666665" />
+        <entry key="app/src/main/res/drawable/ic_visibility_black_18dp.xml" value="0.11574074074074074" />
+        <entry key="app/src/main/res/drawable/ic_visibility_off_black_18dp.xml" value="0.11574074074074074" />
+        <entry key="app/src/main/res/drawable/show_password_selector.xml" value="0.34791666666666665" />
         <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.34791666666666665" />
         <entry key="app/src/main/res/layout-w1240dp/activity_food_login.xml" value="0.21318607764390896" />
         <entry key="app/src/main/res/layout/activity_display_message.xml" value="0.29030797101449274" />
