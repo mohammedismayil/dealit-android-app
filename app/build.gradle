@@ -53,4 +53,6 @@ dependencies {
 
     // for adding cardview
     implementation 'androidx.cardview:cardview:1.0.0'
+//    implementation "com.trustwallet:wallet-core:2.9.6"
+//    implementation "com.trustwallet:wallet-core:2.7.1"
 }
