@@ -4,17 +4,21 @@ buildscript {
         google()
         mavenCentral()
 
-        maven {
-            url = uri("https://maven.pkg.github.com/trustwallet/wallet-core")
-            credentials {
-                username = 'mohammedismayil'
-                password = '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'
-            }
-        }
+
+
+                maven {
+                    url = uri("https://maven.pkg.github.com/trustwallet/wallet-core")
+                    credentials {
+                        username = 'mohammedismayil'
+                        password = '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'
+                    }
+                }
+
     }
     dependencies {
         classpath "com.android.tools.build:gradle:7.0.4"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10"
+//        implementation "com.trustwallet:wallet-core:2.9.6"
 //        classpath "com.trustwallet:wallet-core:2.9.6"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files

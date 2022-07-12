@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.ismayil.myfancy"
-        minSdk 21
+        minSdk 23
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -53,6 +53,7 @@ dependencies {
 
     // for adding cardview
     implementation 'androidx.cardview:cardview:1.0.0'
+    implementation "com.trustwallet:wallet-core:2.9.6"
 //    implementation "com.trustwallet:wallet-core:2.9.6"
 //    implementation "com.trustwallet:wallet-core:2.7.1"
 }

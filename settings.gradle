@@ -3,6 +3,14 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url = uri("https://maven.pkg.github.com/trustwallet/wallet-core")
+            credentials {
+                username = 'mohammedismayil'
+                password = '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'
+            }
+        }
+
         jcenter() // Warning: this repository is going to shut down soon
     }
 }
