@@ -53,7 +53,8 @@
             android:ems="10"
             android:inputType="textEmailAddress"
             android:minHeight="48dp"
-            android:text="your e-mail id" />
+            android:text="your e-mail id"
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/textView6"
@@ -69,12 +70,13 @@
             android:ems="10"
             android:inputType="textPassword"
             android:minHeight="48dp"
-            app:passwordToggleEnabled="true"
-            app:passwordToggleTint="@color/black"
+            android:text="password"
+            android:textColor="@color/black"
             app:passwordToggleDrawable="@drawable/show_password_selector"
 
 
-            android:text="password" />
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/black" />
 
         <Button
             android:id="@+id/button_login"
